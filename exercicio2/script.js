@@ -1,15 +1,18 @@
-let nacionalidade = prompt("digite aqui a nacionalidade").toLowerCase();
+let cartoes = Number(prompt("Escolha o cartão que deseja solicitar:\n 1-Fácil \n 2-Brack \n 3-Platinum \n 4-Master gold"));
 
-if(nacionalidade === "brasileira"){
-    console.log("a pessoa é do Brasil!");
-} else if(nacionalidade === "argentina"){
-    console.log("a pessoa é da Argentina!");
-} else if(nacionalidade === "uruguaia"){
-    console.log("a pessoa é do Uruguai!");
-} else if(nacionalidade === "chilena"){
-    console.log("a pessoa é do Chile!");
-} else if(nacionalidade === "colombiana"){
-    console.log("a pessoa é da Colômbia!");
-} else{
-    console.log("nacionalidade não encontrada")
-}
+switch(cartoes) {
+    case 1:
+        console.log("Cartão fácil");
+        break
+    case 2:
+        console.log("Cartão Black");
+        break
+    case 3:
+        console.log("Cartão Platinum");
+        break
+    case 4:
+        console.log("Cartão Master Gold");
+        break
+    default:
+        console.log("escolha umas das opções disponíveis");
+};
